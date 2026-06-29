@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="漢堡王官方網站。提供經典火烤牛肉華堡、美味炸雞、點心及期間限定新品。立即線上點餐，查詢全台門市資訊與最新超值優惠券！">
+    <title>BurgerKing</title>
+
+    <!--==========FAVICON==========-->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BurgerKing" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!--==========REMIX ICON==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <!--==========SWIPER==========-->
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
+
+    <!--==========CSS==========-->
+    <link rel="stylesheet" href="./styles/shared.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <!-- ==========HEADER========== -->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <div class="nav__links">
+                <a href="./index.html" class="nav__logo popping-font">
+                    <img src="./images/logo.png" alt="Logo">
+                    <span>BurgerKing</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="./menu.html" class="nav__link">經典套餐</a></li>
+                        <li><a href="#" class="nav__link">現正優惠</a></li>
+                        <li><a href="#" class="nav__link">優惠卷</a></li>
+                        <li><a href="#" class="nav__link">門市清單</a></li>
+                        <li><a href="#" class="nav__link">會員登入</a></li>
+                    </ul>
+
+                    <!-- Socials -->
+                    <div class="nav__socials">
+                        <a href="https://www.facebook.com/BurgerKingTW/?locale=zh_TW" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/facebook-icon.svg" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com/burgerking_tw/" class="nav__social-link" target="_blank">
+                            <img src="./images/instagram-icon.svg" alt="instagram">
+                        </a>
+                        <a href="https://www.threads.com/@burgerking_tw?hl=zh-tw" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/threads.svg" alt="threads">
+                        </a>
+                        <a href="https://page.line.me/188tlqyu?openQrModal=true" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/line.png" alt="line">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Actions -->
+            <div class="nav__actions">
+                <a href="#order" class="nav__action nav__action-order">立即預定<i class="ri-restaurant-line"></i></a>
+                <a href="#" class="nav__action nav__action-cart"><span>購物車</span><i
+                        class="ri-shopping-cart-2-fill"></i></a>
+                <a href="#" class="nav__action nav__action-member"><i class="ri-user-fill"></i></a>
+
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Order Info -->
+        <div id="order-info" class="header__order-info">
+            <div class="container">
+                <span></span>
+                <!-- Modify-Button -->
+                <button type="button" id="modify-button">修改</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========MAIN========== -->
+    <main class="main">
+        <!-- ==========HOME========== -->
+        <section id="home" class="home">
+            <!-- Swiper -->
+            <div class="home__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="home__banner swiper-slide">
+                        <img src="./images/banner.jpg" alt="Banner1">
+                    </div>
+                    <div class="home__banner swiper-slide">
+                        <img src="./images/banner2.png" alt="Banner2">
+                    </div>
+                    <div class="home__banner swiper-slide">
+                        <img src="./images/banner3.jpg" alt="Banner3">
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="home__pagination swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- ==========POPULAR========== -->
+        <section class="popular section">
+            <div class="popular__container container">
+                <h1 class="section__title">大家都在點</h1>
+
+                <!-- Swiper -->
+                <div class="popular__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="card popular__card swiper-slide">
+                            <img class="card__img" src="./images/黑醬安格斯牛肉堡.png" alt="黑醬安格斯牛肉堡">
+                            <div class="card__info">
+                                <h2 class="card__title">黑醬安格斯牛肉</h2>
+                                <div>
+                                    <span class="card__price">$158</span>
+                                    <i class="ri-shopping-bag-3-fill card__icon"></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card popular__card swiper-slide">
+                            <img class="card__img" src="./images/黑醬安格斯牛肉堡.png" alt="黑醬安格斯牛肉堡">
+                            <div class="card__info">
+                                <h2 class="card__title">黑醬安格斯牛肉</h2>
+                                <div>
+                                    <span class="card__price">$158</span>
+                                    <i class="ri-shopping-bag-3-fill card__icon"></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card popular__card swiper-slide">
+                            <img class="card__img" src="./images/黑醬安格斯牛肉堡.png" alt="黑醬安格斯牛肉堡">
+                            <div class="card__info">
+                                <h2 class="card__title">黑醬安格斯牛肉</h2>
+                                <div>
+                                    <span class="card__price">$158</span>
+                                    <i class="ri-shopping-bag-3-fill card__icon"></i>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card popular__card swiper-slide">
+                            <img class="card__img" src="./images/黑醬安格斯牛肉堡.png" alt="黑醬安格斯牛肉堡">
+                            <div class="card__info">
+                                <h2 class="card__title">黑醬安格斯牛肉</h2>
+                                <div>
+                                    <span class="card__price">$158</span>
+                                    <i class="ri-shopping-bag-3-fill card__icon"></i>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                    <!-- Pagination -->
+                    <div class="popular__pagination swiper-pagination"></div>
+                </div>
+        </section>
+
+        <!-- ==========MENU========== -->
+        <section class="menu section">
+            <div class="menu__container container">
+                <h2 class="section__title">探索菜單</h2>
+
+                <div class="menu__category">
+                    <a href="#" class="category__item">
+                        <img src="./images/皇家華堡.png" alt="皇家華堡">
+                        <h3>皇家華堡</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/安格斯厚切牛肉.png" alt="安格斯">
+                        <h3>安格斯</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/重磅培根雙層.png" alt="重磅培根">
+                        <h3>重磅培根</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/花生培根牛肉堡.png" alt="培根">
+                        <h3>培根</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/捲捲德腸烤牛堡.png" alt="捲捲德腸">
+                        <h3>捲捲德腸</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/原味國王大雞堡.png" alt="國王大雞">
+                        <h3>國王大雞</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/美式花生雙層.png" alt="雞肉">
+                        <h3>雞肉</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/Ｑ彈老牛肉堡.png" alt="海鮮">
+                        <h3>海鮮</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/洋蔥圈蔬菜堡.png" alt="蔬食">
+                        <h3>蔬食</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/無麵包.png" alt="無麵包">
+                        <h3>無麵包</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/ＱＱ球.png" alt="點心">
+                        <h3>點心</h3>
+                    </a>
+
+                    <a href="#" class="category__item">
+                        <img src="./images/可樂.png" alt="飲料">
+                        <h3>飲料</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========ORDER========== -->
+        <section id="order" class="order section">
+            <img class="order__bg order__bg-burger" src="./images/order__bg.png" alt="burger">
+            <img class="order__bg order__bg-fries" src="./images/order__bg2.png" alt="fries">
+            <div class="order__container">
+                <!-- Order Switch -->
+                <div class="order__buttons">
+                    <button id="delivery-switch" type="button" class="order__button order__button--active">預訂外送</button>
+                    <button id="pickup-switch" type="button" class="order__button">預定取餐</button>
+                </div>
+
+                <div class="order__title">
+                    <h2 class="section__title">立即預定</h2>
+                    <span class="section__subtitle">線上先預訂，美味免排隊！</span>
+                </div>
+
+                <form action="#" id="delivery-form" class="order__form order__form--delivery show-form">
+                    <div class="form__container">
+                        <div>
+                            <label for="order-date">取餐日期</label>
+                            <input id="order-date" type="date" name="date" required>
+                        </div>
+
+                        <div>
+                            <label for="order-time">取餐時間</label>
+                            <input id="order-time" type="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form__container">
+                        <div>
+                            <label for="order-city">外送縣市</label>
+                            <div class="form__wrapper">
+                                <select name="order-city" id="order-city" class="form__select" required>
+                                    <option value="" selected disabled>請選擇</option>
+                                    <option value="大同區">大同區</option>
+                                    <option value="台北市">台北市</option>
+                                    <option value="桃園市">桃園市</option>
+                                    <option value="台南市">台南市</option>
+                                </select>
+                                <i class="ri-arrow-down-s-line select-arrow"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="order-dist">外送區域</label>
+                            <div class="form__wrapper">
+                                <select name="order-dist" id="order-dist" class="form__select" required>
+                                    <option value="" selected disabled>請選擇</option>
+                                    <option value="中壢區">中壢區</option>
+                                    <option value="大園區">大園區</option>
+                                    <option value="復興區">復興區</option>
+                                </select>
+                                <i class="ri-arrow-down-s-line select-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="order-address">外送地址</label>
+                        <input id="order-address" type="text" placeholder="請輸入地址" required>
+                    </div>
+
+
+                    <button type="submit" id="delivery-button"><i class="ri-shopping-cart-2-fill"></i>前往點餐</button>
+                </form>
+
+                <form action="#" id="pickup-form" class="order__form order__form--pickup">
+                    <div class="form__container">
+                        <div>
+                            <label for="pickup-date">取餐日期</label>
+                            <input id="pickup-date" type="date" required>
+                        </div>
+
+                        <div>
+                            <label for="pickup-time">取餐時間</label>
+                            <input id="pickup-time" type="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form__container">
+                        <div>
+                            <label for="pickup-city">預定縣市</label>
+                            <div class="form__wrapper">
+                                <select name="pickup-city" id="pickup-city" class="form__select" required>
+                                    <option value="" selected disabled>請選擇</option>
+                                    <option value="台北市">台北市</option>
+                                    <option value="桃園市">桃園市</option>
+                                    <option value="台南市">台南市</option>
+                                </select>
+                                <i class="ri-arrow-down-s-line select-arrow"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="pickup-dist">預定區域</label>
+                            <div class="form__wrapper">
+                                <select name="pickup-dist" id="pickup-dist" class="form__select" required>
+                                    <option value="" selected disabled>請選擇</option>
+                                    <option value="大同區">大同區</option>
+                                    <option value="中壢區">中壢區</option>
+                                    <option value="大園區">大園區</option>
+                                    <option value="復興區">復興區</option>
+                                </select>
+                                <i class="ri-arrow-down-s-line select-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="pickup-address">選擇分店</label>
+                        <div class="form__wrapper">
+                            <select name="pickup-dist" id="pickup-address" class="form__select" required>
+                                <option value="" selected disabled>請選擇</option>
+                                <option value="中壢店">中壢店</option>
+                                <option value="復興店">復興店</option>
+                                <option value="中正店">中正店</option>
+                            </select>
+                            <i class="ri-arrow-down-s-line select-arrow"></i>
+                        </div>
+                    </div>
+
+
+                    <button type="submit" id="pickup-button"><i class="ri-shopping-cart-2-fill"></i>前往點餐</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========FOOTER========== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__info ">
+                <div class="footer__data">
+                    <h2 class="footer__data-title popping-font">GREAT FOOD COMES FIRST</h2>
+                    <p class="footer__description">
+                        漢堡王®華堡採用100%火烤純牛肉搭配口感紮實的5吋漢堡，肉片皆採全球統一的火烤設備在370度高溫下快速火烤，保留肉汁原味，多汁而不油膩，再加上新鮮番茄、洋蔥、酸黃瓜及爽口蔬菜，讓你每一口咬下都吃的到牛肉的火烤美味!
+                    </p>
+                </div>
+
+                <div class="footer__social">
+                    <h2 class="footer__social-title popping-font">FOLLOW US</h2>
+                    <div class="social__links">
+                        <a href="#" class="social__link"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social__link"><i class="ri-facebook-line"></i></a>
+                        <a href="#" class="social__link"><i class="ri-threads-line"></i></a>
+                        <a href="#" class="social__link"><i class="ri-line-line"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li>
+                        <h3 class="footer__nav-title">漢堡王服務</h3>
+                    </li>
+                    <li><a href="#" class="footer__nav-link">當期優惠卷</a></li>
+                    <li><a href="#" class="footer__nav-link">外送服務</a></li>
+                    <li><a href="#" class="footer__nav-link">門市清單</a></li>
+                    <li><a href="#" class="footer__nav-link">支付方式</a></li>
+                    <li><a href="#" class="footer__nav-link">商品禮卷</a></li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li>
+                        <h3 class="footer__nav-title">關於我們</h3>
+                    </li>
+                    <li><a href="#" class="footer__nav-link">關於漢堡王</a></li>
+                    <li><a href="#" class="footer__nav-link">新聞中心</a></li>
+                    <li><a href="#" class="footer__nav-link">人才招募</a></li>
+                    <li><a href="#" class="footer__nav-link">店面提供</a></li>
+                    <li><a href="#" class="footer__nav-link">聯絡我們</a></li>
+                    <li><a href="#" class="footer__nav-link">商業合</a>作</li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li>
+                        <h3 class="footer__nav-title">法律資訊</h3>
+                    </li>
+                    <li><a href="#" class="footer__nav-link">網站隱私權聲明</a></li>
+                    <li><a href="#" class="footer__nav-link">食物營養成分參考表</a></li>
+                    <li><a href="#" class="footer__nav-link">食品營養安全</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            ©余昌諺 2026 Burger King ReDesign. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- ==========DIALOG========== -->
+    <dialog id="dialog" class="dialog">
+        <i class="ri-checkbox-circle-fill"></i>
+        <h2 class="dialog__title">預定完成</h2>
+        <p class="dialog__desc">接下來請選擇您今天的餐點</p>
+        <button class="dialog__button" id="close-btn">關閉</button>
+    </dialog>
+
+    <!-- ==========SCROPP UP========== -->
+    <a href="#" class="scroll__up" id="scroll-up">
+        <i class="ri-arrow-up-fill"></i>
+    </a>
+
+    <!-- ==========SWIPER JS========== -->
+    <script src="./scripts/swiper-bundle.min.js"></script>
+
+    <!-- ==========SHARED JS========== -->
+    <script src="./scripts/shared.js"></script>
+
+    <!-- ==========MAIN JS========== -->
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="漢堡王官方網站。提供經典火烤牛肉華堡、美味炸雞、點心及期間限定新品。立即線上點餐，查詢全台門市資訊與最新超值優惠券！">
+    <title>BurgerKing</title>
+
+    <!--==========FAVICON==========-->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BurgerKing" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!--==========REMIX ICON==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <!--==========SWIPER==========-->
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
+
+    <!--==========CSS==========-->
+    <link rel="stylesheet" href="./styles/shared.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+</head>
+
+<body>
+    <!--==========HEADER==========-->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <div class="nav__links">
+                <a href="./index.html" class="nav__logo popping-font">
+                    <img src="./images/logo.png" alt="Logo">
+                    <span>BurgerKing</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="./menu.html" class="nav__link">經典套餐</a></li>
+                        <li><a href="#" class="nav__link">現正優惠</a></li>
+                        <li><a href="#" class="nav__link">優惠卷</a></li>
+                        <li><a href="#" class="nav__link">門市清單</a></li>
+                        <li><a href="#" class="nav__link">會員登入</a></li>
+                    </ul>
+
+                    <!-- Socials -->
+                    <div class="nav__socials">
+                        <a href="https://www.facebook.com/BurgerKingTW/?locale=zh_TW" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/facebook-icon.svg" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com/burgerking_tw/" class="nav__social-link" target="_blank">
+                            <img src="./images/instagram-icon.svg" alt="instagram">
+                        </a>
+                        <a href="https://www.threads.com/@burgerking_tw?hl=zh-tw" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/threads.svg" alt="threads">
+                        </a>
+                        <a href="https://page.line.me/188tlqyu?openQrModal=true" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/line.png" alt="line">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Actions -->
+            <div class="nav__actions">
+                <a href="#order" class="nav__action nav__action-order">立即預定<i class="ri-restaurant-line"></i></a>
+                <a href="#" class="nav__action nav__action-cart"><span>購物車</span><i
+                        class="ri-shopping-cart-2-fill"></i></a>
+                <a href="#" class="nav__action nav__action-member"><i class="ri-user-fill"></i></a>
+
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Order Info -->
+        <div id="order-info" class="header__order-info">
+            <div class="container">
+                <span></span>
+                <!-- Modify-Button -->
+                <button type="button" id="modify-button">修改</button>
+            </div>
+        </div>
+    </header>
+
+    <!--==========MAIN==========-->
+    <main class="main menu">
+        <!--==========HERO==========-->
+        <section class="hero">
+            <div class="hero__cover">
+                <img class="hero__image" src="https://www.figma.com/api/mcp/asset/f27e8bd8-6257-4f0c-a873-e85ab23ca140"
+                    alt="Burger King 漢堡" />
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content">
+                <p class="hero__title">皇家般的極致美味</p>
+                <p class="hero__subtitle">火烤就是美味，品嘗最經典的皇家華堡系列</p>
+            </div>
+        </section>
+
+        <!--==========CATEGORY NAV==========-->
+        <nav class="category-nav" aria-label="分類選單">
+            <a href="#" class="category-nav__item category-nav__item--active">華堡</a>
+            <a href="#" class="category-nav__item">安格斯</a>
+            <a href="#" class="category-nav__item">重磅培根</a>
+            <a href="#" class="category-nav__item">培根</a>
+            <a href="#" class="category-nav__item">捲捲德腸</a>
+            <a href="#" class="category-nav__item">國王大雞</a>
+            <a href="#" class="category-nav__item">雞肉</a>
+            <a href="#" class="category-nav__item">海鮮</a>
+            <a href="#" class="category-nav__item">蔬食</a>
+            <a href="#" class="category-nav__item">無麵包</a>
+            <a href="#" class="category-nav__item">點心</a>
+            <a href="#" class="category-nav__item">飲料</a>
+        </nav>
+
+        <!--==========PRODUCT==========-->
+        <section class="product-section">
+            <div class="product-section__head">
+                <h2 class="product-section__title">皇家華堡系列</h2>
+            </div>
+            <div class="product-section__list" id="productList"></div>
+        </section>
+    </main>
+    <!-- ==========SWIPER JS========== -->
+    <script src="./scripts/swiper-bundle.min.js"></script>
+
+    <!-- ==========SHARED JS========== -->
+    <script src="./scripts/shared.js"></script>
+
+    <!-- ==========MENU JS========== -->
+    <script src="./scripts/menu.js"></script>
+</body>
+
+</html>

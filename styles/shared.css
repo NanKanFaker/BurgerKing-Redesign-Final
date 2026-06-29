@@ -1,0 +1,423 @@
+/* =================== GOOGLE FONTS ========================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+
+/* =================== VARIABLES CSS ========================== */
+:root {
+    --header-height: 5.5rem;
+    --order-info-height: 3.5rem;
+    /* ==========Colors========== */
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsla(15, 60%, 20%);
+    --first-color-opacity: hsla(15, 60%, 20%, .4);
+
+    --second-color: hsla(25, 100%, 60%);
+    --third-color: hsla(10, 100%, 42%);
+
+    --text-color: hsl(15, 60%, 9%);
+
+    --body-color: hsl(36, 56%, 91%);
+    --white-color: hsl(0, 0%, 97%);
+
+    --section-color: hsla(15, 60%, 20%, .05);
+    --card-stroke-color: hsla(0, 0%, 55%, .15);
+    --card-shadow-color: hsla(0, 0%, 0%, .15);
+
+    --scroll-bar-color: hsl(36, 56%, 81%);
+    --scroll-thumb-color: hsla(25, 100%, 60%, .7);
+
+    /* ========== Font and typography ========== */
+    --body-font: "Noto Sans TC", sans-serif;
+    --en-font: "Poppins", sans-serif;
+
+    /* phone size */
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+
+    /* ========== Others ========== */
+    --card-border-radious: 2rem;
+    --button-border-radious: 1rem;
+    --shadow-anime-time: .4s;
+
+}
+
+/* =================== Responsive typography ========================== */
+/* desktop size 968 / 1150 */
+@media screen and (min-width: 1150px) {
+    :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1.125rem;
+        --small-font-size: .813rem;
+    }
+}
+
+/* ================== CSS RESET / BASE ========================= */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+input,
+button,
+textarea {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+p {
+    line-height: 150%;
+    letter-spacing: .1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    /* replace display block */
+    font-style: italic;
+    /* img alt */
+    object-fit: cover;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+    padding-block: 3rem;
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 1120px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.main {
+    overflow: clip;
+}
+
+.popping-font {
+    color: var(--text-color);
+    font-family: var(--en-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*=============== HEADER ===============*/
+.header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--white-color);
+    transition: box-shadow var(--shadow-anime-time);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.nav__logo img {
+    width: 48px;
+}
+
+.nav__logo span {
+    display: none;
+}
+
+.nav__actions {
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+
+.nav__action,
+.nav__toggle {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    padding: .75rem;
+    color: var(--white-color);
+    background-color: var(--first-color);
+    border-radius: var(--button-border-radious);
+    font-size: 1.25rem;
+    transition: box-shadow var(--shadow-anime-time);
+}
+
+.nav__action:hover,
+.nav__toggle:hover {
+    box-shadow: 0 0 12px var(--second-color);
+}
+
+.nav__action-order {
+    background-color: var(--third-color);
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+}
+
+.nav__action-cart span {
+    display: none;
+}
+
+.nav__action-member {
+    display: none;
+}
+
+.nav__toggle {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    cursor: pointer;
+    display: flex;
+}
+
+/*Navigation for mobile devices*/
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        top: -120%;
+        left: 0;
+        background-color: var(--white-color);
+        box-shadow: 0 4px 16px var(--card-shadow-color);
+        transition: top .4s;
+    }
+
+    .nav__socials {
+        padding-block: 2rem;
+        display: flex;
+        justify-content: center;
+        column-gap: 1.5rem;
+    }
+
+    .nav__link:hover {
+        border-bottom: solid 1px var(--second-color);
+    }
+
+    .nav__social-link img {
+        width: 48px;
+        padding: .5rem;
+        border-radius: .5rem;
+        transition: transform .4s;
+    }
+
+    .nav__social-link img:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 4px 8px var(--card-shadow-color);
+    }
+
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.5rem;
+}
+
+.nav__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    transition: color .4s, border-bottom .4s;
+    padding-block: 1.25rem;
+    border-bottom: solid 1px var(--text-color);
+}
+
+.nav__link:hover {
+    color: var(--second-color);
+}
+
+.header__order-info {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: var(--order-info-height);
+    background-color: var(--third-color);
+    color: var(--white-color);
+}
+
+.header__order-info .container {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.header__order-info button {
+    width: 80px;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    border-radius: var(--button-border-radious);
+}
+
+/* show order info */
+.show-info {
+    display: flex;
+}
+
+/* show menu */
+.show-menu {
+    top: var(--header-height);
+}
+
+/* scroll header */
+.scroll-header {
+    box-shadow: 0 2px 16px var(--card-shadow-color);
+}
+
+/*=============== CARD ===============*/
+.card {
+    width: 260px;
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 12px var(--card-shadow-color);
+    border-radius: var(--card-border-radious);
+    border: solid 2px var(--card-stroke-color);
+    overflow: clip;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__info {
+    display: grid;
+    row-gap: .75rem;
+}
+
+.card__info>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__price {
+    font-size: var(--h2-font-size);
+    font-family: var(--en-font);
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+.card__icon {
+    background-color: var(--third-color);
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: transform .4s, box-shadow .4s;
+}
+
+.card__icon:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0 4px 12px var(--card-shadow-color);
+}
+
+/*=============== SCROLL UP ===============*/
+.scroll__up {
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    bottom: -50%;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    box-shadow: 0 2px 16px var(--card-shadow-color);
+    padding: .75rem;
+    display: inline-flex;
+    border-radius: .5rem;
+    transition: transform .4s, bottom .4s;
+}
+
+.scroll__up i {
+    font-size: 1rem;
+    color: var(--text-color)
+}
+
+.scroll__up:hover {
+    transform: translateY(-.5rem);
+}
+
+/*show scroll*/
+.show-scroll {
+    bottom: 3rem;
+}
+
+/*scroll for large devices*/
+@media screen and (min-width:1150px) {
+    .scroll__up {
+        right: 3rem;
+    }
+
+    .scroll__up i {
+        font-size: 1.25rem;
+    }
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .75rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+}
