@@ -8,42 +8,42 @@ const productSections = [
                 title: "皇家華堡",
                 priceMeal: 199,
                 priceSingle: 144,
-                image: "../images/royal-whopper.png"
+                image: "./images/royal-whopper.png"
             },
             {
                 id: "royal-whopper-spicy",
                 title: "皇家辣味華堡",
                 priceMeal: 199,
                 priceSingle: 144,
-                image: "../images/royal-whopper.png"
+                image: "./images/royal-whopper.png"
             },
             {
                 id: "double-royal-whopper",
                 title: "皇家雙層華堡",
                 priceMeal: 204,
                 priceSingle: 259,
-                image: "../images/double-royal-whopper.png"
+                image: "./images/double-royal-whopper.png"
             },
             {
                 id: "double-royal-whopper-spicy",
                 title: "辣味皇家雙層華堡",
                 priceMeal: 204,
                 priceSingle: 259,
-                image: "../images/double-royal-whopper.png"
+                image: "./images/double-royal-whopper.png"
             },
             {
                 id: "triple-royal-whopper",
                 title: "皇家三層華堡",
                 priceMeal: 319,
                 priceSingle: 264,
-                image: "../images/triple-royal-whopper.png"
+                image: "./images/triple-royal-whopper.png"
             },
             {
                 id: "triple-royal-whopper-spicy",
                 title: "辣味皇家三層華堡",
                 priceMeal: 319,
                 priceSingle: 264,
-                image: "../images/triple-royal-whopper.png"
+                image: "./images/triple-royal-whopper.png"
             }
         ]
     },
@@ -55,21 +55,21 @@ const productSections = [
                 title: "花生安格斯牛肉堡",
                 priceMeal: 210,
                 priceSingle: 155,
-                image: "../images/peanut-angus-beef-burger.png"
+                image: "./images/peanut-angus-beef-burger.png"
             },
             {
                 id: "angus-thickcut-beef-burger",
                 title: "安格斯厚切牛肉堡",
                 priceMeal: 210,
                 priceSingle: 155,
-                image: "../images/angus-thickcut-beef-burger.png"
+                image: "./images/angus-thickcut-beef-burger.png"
             },
             {
                 id: "strong-angus-beef-burger",
                 title: "勁濃安格斯牛肉堡",
                 priceMeal: 210,
                 priceSingle: 155,
-                image: "../images/strong-angus-beef-burger.png"
+                image: "./images/strong-angus-beef-burger.png"
             }
         ]
     }

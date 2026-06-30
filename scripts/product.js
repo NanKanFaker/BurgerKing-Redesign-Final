@@ -4,42 +4,42 @@ const products = {
         title: "皇家華堡",
         priceMeal: 199,
         priceSingle: 144,
-        image: "../images/royal-whopper.png"
+        image: "./images/royal-whopper.png"
     },
     "royal-whopper-spicy": {
         id: "royal-whopper-spicy",
         title: "皇家辣味華堡",
         priceMeal: 199,
         priceSingle: 144,
-        image: "../images/royal-whopper.png"
+        image: "./images/royal-whopper.png"
     },
     "double-royal-whopper": {
         id: "double-royal-whopper",
         title: "皇家雙層華堡",
         priceMeal: 204,
         priceSingle: 259,
-        image: "../images/double-royal-whopper.png"
+        image: "./images/double-royal-whopper.png"
     },
     "double-royal-whopper-spicy": {
         id: "double-royal-whopper-spicy",
         title: "辣味皇家雙層華堡",
         priceMeal: 204,
         priceSingle: 259,
-        image: "../images/double-royal-whopper.png"
+        image: "./images/double-royal-whopper.png"
     },
     "triple-royal-whopper": {
         id: "triple-royal-whopper",
         title: "皇家三層華堡",
         priceMeal: 319,
         priceSingle: 264,
-        image: "../images/triple-royal-whopper.png"
+        image: "./images/triple-royal-whopper.png"
     },
     "triple-royal-whopper-spicy": {
         id: "triple-royal-whopper-spicy",
         title: "辣味皇家三層華堡",
         priceMeal: 319,
         priceSingle: 264,
-        image: "../images/triple-royal-whopper.png"
+        image: "./images/triple-royal-whopper.png"
     }
 }
 
