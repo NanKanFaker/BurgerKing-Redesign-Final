@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="漢堡王官方網站。提供經典火烤牛肉華堡、美味炸雞、點心及期間限定新品。立即線上點餐，查詢全台門市資訊與最新超值優惠券！">
+        <title>BurgerKing</title>
+
+        <!--==========FAVICON==========-->
+        <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="BurgerKing" />
+        <link rel="manifest" href="./site.webmanifest" />
+
+        <!--==========REMIX ICON==========-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+        <!--==========CSS==========-->
+        <link rel="stylesheet" href="./styles/shared.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/cart.css">
+    </head>
+</head>
+
+<body>
+    <!-- ==========HEADER========== -->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <div class="nav__links">
+                <a href="./index.html" class="nav__logo popping-font">
+                    <img src="./images/logo.png" alt="Logo">
+                    <span>BurgerKing</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="./menu.html" class="nav__link">經典套餐</a></li>
+                        <li><a href="#" class="nav__link">現正優惠</a></li>
+                        <li><a href="#" class="nav__link">優惠卷</a></li>
+                        <li><a href="#" class="nav__link">門市清單</a></li>
+                        <li><a href="#" class="nav__link">會員登入</a></li>
+                    </ul>
+
+                    <!-- Socials -->
+                    <div class="nav__socials">
+                        <a href="https://www.facebook.com/BurgerKingTW/?locale=zh_TW" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/facebook-icon.svg" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com/burgerking_tw/" class="nav__social-link" target="_blank">
+                            <img src="./images/instagram-icon.svg" alt="instagram">
+                        </a>
+                        <a href="https://www.threads.com/@burgerking_tw?hl=zh-tw" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/threads.svg" alt="threads">
+                        </a>
+                        <a href="https://page.line.me/188tlqyu?openQrModal=true" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/line.png" alt="line">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Actions -->
+            <div class="nav__actions">
+                <a href="#order" class="nav__action nav__action-order">立即預定<i class="ri-restaurant-line"></i></a>
+                <a href="#" class="nav__action nav__action-cart"><span>購物車</span><i
+                        class="ri-shopping-cart-2-fill"></i></a>
+                <a href="#" class="nav__action nav__action-member"><i class="ri-user-fill"></i></a>
+
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Order Info -->
+        <div id="order-info" class="header__order-info">
+            <div class="container">
+                <span></span>
+                <!-- Modify-Button -->
+                <button type="button" id="modify-button">修改</button>
+            </div>
+        </div>
+    </header>
+    <!-- ==========MAIN========== -->
+    <main class="main">
+        <section class="section cart-page">
+            <div class="container cart-page__container">
+                <div class="cart-page__intro">
+                    <h1 class="cart-page__title">你的購物車</h1>
+                    <p class="cart-page__subtitle">下單前，請先確認您的餐點以及其他資訊。</p>
+                </div>
+
+                <div class="cart-page__content">
+                    <div class="cart-page__main">
+                        <section class="card card--pickup">
+                            <div class="card__pickup-info">
+                                <img class="pickup-card__icon"
+                                    src="https://www.figma.com/api/mcp/asset/c7852046-02f6-4cb2-a189-861fefd452c1"
+                                    alt="pickup icon" />
+                                <div class="pickup-card__details">
+                                    <div class="pickup-card__row">
+                                        <span class="pickup-card__text">預定地點:</span>
+                                        <span class="pickup-card__text">桃園市中壢區平安路一段144號</span>
+                                    </div>
+                                    <div class="pickup-card__row">
+                                        <img class="quantity-control__icon"
+                                            src="https://www.figma.com/api/mcp/asset/c4448ecb-9033-43ff-9826-5d9e1d7aff9e"
+                                            alt="time icon" />
+                                        <span class="pickup-card__text">2026-06-10 22:17</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="pickup-card__button" type="button">修改</button>
+                        </section>
+
+                        <section class="card">
+                            <h2 class="section-title">餐點明細</h2>
+                            <ul id="order-list" class="order__list">
+                            </ul>
+                        </section>
+
+                        <section class="card">
+                            <h2 class="section-title">繼續加點</h2>
+                            <div class="addon-list">
+                                <article class="addon-card">
+                                    <div class="addon-card__image">
+                                        <img src="https://www.figma.com/api/mcp/asset/be5968bc-6c50-48ff-abea-96df9eb266c2"
+                                            alt="薯條" />
+                                    </div>
+                                    <h3 class="addon-card__title">薯條</h3>
+                                    <div class="addon-card__footer">
+                                        <span class="addon-card__price">+$40</span>
+                                        <button class="addon-card__button" type="button">Add</button>
+                                    </div>
+                                </article>
+                                <article class="addon-card">
+                                    <div class="addon-card__image">
+                                        <img src="https://www.figma.com/api/mcp/asset/be5968bc-6c50-48ff-abea-96df9eb266c2"
+                                            alt="薯條" />
+                                    </div>
+                                    <h3 class="addon-card__title">薯條</h3>
+                                    <div class="addon-card__footer">
+                                        <span class="addon-card__price">+$40</span>
+                                        <button class="addon-card__button" type="button">Add</button>
+                                    </div>
+                                </article>
+                                <article class="addon-card">
+                                    <div class="addon-card__image">
+                                        <img src="https://www.figma.com/api/mcp/asset/be5968bc-6c50-48ff-abea-96df9eb266c2"
+                                            alt="薯條" />
+                                    </div>
+                                    <h3 class="addon-card__title">薯條</h3>
+                                    <div class="addon-card__footer">
+                                        <span class="addon-card__price">+$40</span>
+                                        <button class="addon-card__button" type="button">Add</button>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="card textarea-card">
+                            <h2 class="section-title">備註</h2>
+                            <textarea class="note__textarea" placeholder="輸入備註..."></textarea>
+                        </section>
+
+                        <section class="card">
+                            <h2 class="section-title">聯絡資訊</h2>
+                            <div class="contact-form">
+                                <label class="field">
+                                    <span class="field__label">名稱</span>
+                                    <input class="field__input" type="text" value="" placeholder="輸入姓名" />
+                                </label>
+                                <label class="field">
+                                    <span class="field__label">電話</span>
+                                    <input class="field__input" type="text" value="" placeholder="輸入電話" />
+                                </label>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="cart-page__sidebar">
+                        <section class="card">
+                            <h2 class="section-title">優惠碼</h2>
+                            <div class="promo-card__form">
+                                <input class="promo-card__input" type="text" placeholder="Enter code" />
+                                <button class="promo-card__button" type="button">Apply</button>
+                            </div>
+                        </section>
+
+                        <section class="card">
+                            <h2 class="section-title">餐點總計</h2>
+                            <div class="summary-card__row">
+                                <span class="summary-card__label">總計</span>
+                                <span class="summary-card__value">$518</span>
+                            </div>
+                        </section>
+
+                        <section class="card">
+                            <h2 class="section-title">付款方式</h2>
+                            <div class="payment-options">
+                                <label class="payment-option payment-option--active">
+                                    <i class="ri-bank-card-line payment-option__icon"></i>
+                                    <span class="payment-option__label">信用卡</span>
+                                    <i class="ri-radio-button-fill payment-option__radio"></i>
+                                </label>
+                                <label class="payment-option">
+                                    <i class="ri-wallet-line payment-option__icon"></i>
+                                    <span class="payment-option__label">Apple Pay</span>
+                                    <i class="ri-radio-button-fill payment-option__radio"></i>
+                                </label>
+                                <label class="payment-option">
+                                    <i class="ri-paypal-line payment-option__icon"></i>
+                                    <span class="payment-option__label">PayPal</span>
+                                    <i class="ri-radio-button-fill payment-option__radio"></i>
+                                </label>
+                            </div>
+                        </section>
+
+                        <button class="submit-button" type="button">
+                            <span>送出</span>
+                            <img class="submit-button__icon"
+                                src="https://www.figma.com/api/mcp/asset/ca2f318b-9479-4e0a-8581-3a0efdaa0ff8"
+                                alt="submit" />
+                        </button>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========FOOTER========== -->
+    <footer class="footer">
+        <div class="footer__copyright">
+            ©余昌諺 2026 Burger King ReDesign. All rights reserved.
+        </div>
+    </footer>
+    <!-- ==========SHARED JS========== -->
+    <script src="./scripts/shared.js"></script>
+
+    <!-- ==========MENU JS========== -->
+    <script src="./scripts/cart.js"></script>
+</body>
+
+</html>

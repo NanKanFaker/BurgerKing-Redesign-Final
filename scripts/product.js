@@ -78,11 +78,13 @@ addBtn.addEventListener('click', () => {
     });
 
     cart.push({
+        id: product.id,
         title: product.title,
+        image: product.image,
         price: price,
         quantity: quantity,
         meal: meal,
     });
-    console.log(cart);
     localStorage.setItem('cart', JSON.stringify(cart));
 })
+
