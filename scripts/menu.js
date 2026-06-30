@@ -1,4 +1,4 @@
-//=====================RENDER PRODUCTS================//
+//=====================RENDER PRODUCTS SECTION================//
 const productSections = [
     {
         sectionTitle: "皇家華堡系列",
@@ -113,6 +113,12 @@ function renderProductSections() {
                 </div>
             `;
             list.append(article);
+
+            //按下購物車按鈕，帶id到商品頁
+            article.querySelector('.card-btn').addEventListener('click', () => {
+                location.href = `product.html?id=${product.id}`;
+            });
+
         });
 
         sectionEl.append(head, list);

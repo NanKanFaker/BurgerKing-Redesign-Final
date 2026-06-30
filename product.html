@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="漢堡王官方網站。提供經典火烤牛肉華堡、美味炸雞、點心及期間限定新品。立即線上點餐，查詢全台門市資訊與最新超值優惠券！">
+    <title>BurgerKing</title>
+
+    <!--==========FAVICON==========-->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BurgerKing" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!--==========REMIX ICON==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <!--==========SWIPER==========-->
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
+
+    <!--==========CSS==========-->
+    <link rel="stylesheet" href="./styles/shared.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/product.css">
+</head>
+
+<body>
+    <!--==========HEADER==========-->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <div class="nav__links">
+                <a href="./index.html" class="nav__logo popping-font">
+                    <img src="./images/logo.png" alt="Logo">
+                    <span>BurgerKing</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="./menu.html" class="nav__link">經典套餐</a></li>
+                        <li><a href="#" class="nav__link">現正優惠</a></li>
+                        <li><a href="#" class="nav__link">優惠卷</a></li>
+                        <li><a href="#" class="nav__link">門市清單</a></li>
+                        <li><a href="#" class="nav__link">會員登入</a></li>
+                    </ul>
+
+                    <!-- Socials -->
+                    <div class="nav__socials">
+                        <a href="https://www.facebook.com/BurgerKingTW/?locale=zh_TW" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/facebook-icon.svg" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com/burgerking_tw/" class="nav__social-link" target="_blank">
+                            <img src="./images/instagram-icon.svg" alt="instagram">
+                        </a>
+                        <a href="https://www.threads.com/@burgerking_tw?hl=zh-tw" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/threads.svg" alt="threads">
+                        </a>
+                        <a href="https://page.line.me/188tlqyu?openQrModal=true" class="nav__social-link"
+                            target="_blank">
+                            <img src="./images/line.png" alt="line">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Actions -->
+            <div class="nav__actions">
+                <a href="#order" class="nav__action nav__action-order">立即預定<i class="ri-restaurant-line"></i></a>
+                <a href="#" class="nav__action nav__action-cart"><span>購物車</span><i
+                        class="ri-shopping-cart-2-fill"></i></a>
+                <a href="#" class="nav__action nav__action-member"><i class="ri-user-fill"></i></a>
+
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Order Info -->
+        <div id="order-info" class="header__order-info">
+            <div class="container">
+                <span></span>
+                <!-- Modify-Button -->
+                <button type="button" id="modify-button">修改</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main product-page">
+        <!-- Product Image Container -->
+        <div class="product__image-container">
+            <div class="product__image-wrapper">
+                <img src="" alt="" class="product__image">
+            </div>
+        </div>
+
+        <!-- Top Bar (Back Button) -->
+        <div class="product__top-bar" data-node-id="360:5179">
+            <a href="./menu.html" class="product__top-bar-text noto-sans-body"><i
+                    class="ri-arrow-left-line"></i>回上一頁</a>
+        </div>
+
+        <!-- Product Info Section -->
+        <div class="product__info" data-node-id="360:5156">
+            <div class="product__container" data-node-id="360:5157">
+                <!-- Product Title -->
+                <div class="product__title" data-node-id="360:5158">
+                    <h1 class="product__title-name noto-sans-title" data-node-id="360:5159"></h1>
+                    <p class="product__title-price noto-sans-title" data-node-id="360:5160"></p>
+                </div>
+
+                <!-- Product Switch (Single/Set) -->
+                <div class="product__switch" data-node-id="360:5161">
+                    <button class="product__switch-btn noto-sans-body" data-node-id="49:118">
+                        單點
+                    </button>
+                    <button class="product__switch-btn product__switch-btn--active noto-sans-body"
+                        data-node-id="49:120">
+                        套餐
+                    </button>
+                </div>
+
+                <!-- Product Meal Section -->
+                <div class="product__meal" data-node-id="360:5162">
+                    <h2 class="product__meal-title noto-sans-title" data-node-id="360:5163">套餐內容</h2>
+
+                    <!-- Meal Option 1 -->
+                    <div class="meal__option" data-node-id="360:5164">
+                        <div class="meal__info" data-node-id="355:4471">
+                            <img src="https://www.figma.com/api/mcp/asset/29995829-3349-47cd-aef9-e87313c9e63c" alt="可樂"
+                                class="meal__image" data-node-id="355:4466">
+                            <span class="meal__name noto-sans-body" data-node-id="355:4467">可樂</span>
+                        </div>
+                        <button class="meal__btn noto-sans-body" data-node-id="355:4469">替換</button>
+                    </div>
+
+                    <!-- Meal Option 2 -->
+                    <div class="meal__option" data-node-id="355:4496">
+                        <div class="meal__info" data-node-id="355:4471">
+                            <img src="https://www.figma.com/api/mcp/asset/091e7022-c96c-45af-9e83-e04f96f72c87" alt="薯條"
+                                class="meal__image" data-node-id="355:4466">
+                            <span class="meal__name noto-sans-body" data-node-id="355:4467">薯條</span>
+                        </div>
+                        <button class="meal__btn noto-sans-body" data-node-id="355:4469">替換</button>
+                    </div>
+                </div>
+
+                <!-- Product Total Price -->
+                <div class="product__total-price" data-node-id="360:5166">
+                    <span class="product__total-price-label noto-sans-body" data-node-id="360:5167">小計</span>
+                    <span id="total-price" class="product__total-price-value noto-sans-body"
+                        data-node-id="360:5168">$259</span>
+                </div>
+            </div>
+
+            <!-- Product Action Section (Bottom) -->
+            <div class="product__action" data-node-id="360:5169">
+                <div class="product__count" data-node-id="360:5170">
+                    <button class="product__count-btn" data-node-id="360:5171">
+                        <i class="ri-subtract-line"></i>
+                    </button>
+                    <span id="quantity" class="product__count-value noto-sans-body" data-node-id="360:5173">1</span>
+                    <button class="product__count-btn" data-node-id="360:5174">
+                        <i class="ri-add-line"></i>
+                    </button>
+                </div>
+                <button id="add-cart" class="product__btn-add-cart noto-sans-body"
+                    data-node-id="360:5176">加入購物車</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- ==========FOOTER========== -->
+    <footer class="footer">
+        <div class="footer__copyright">
+            ©余昌諺 2026 Burger King ReDesign. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- ==========SHARED JS========== -->
+    <script src="./scripts/shared.js"></script>
+
+    <!-- ==========PRODUCT JS========== -->
+    <script src="./scripts/product.js"></script>
+</body>
+
+</html>
