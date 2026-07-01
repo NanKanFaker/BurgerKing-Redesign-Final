@@ -413,6 +413,18 @@
     height: 1rem;
 }
 
+/*for small devices*/
+@media screen and (max-width: 375px) {
+    .promo-card__input {
+        width: 100px;
+    }
+
+    .pickup-card__row:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .card {
         padding: 1.5rem;
