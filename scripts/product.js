@@ -16,15 +16,15 @@ const products = {
     "double-royal-whopper": {
         id: "double-royal-whopper",
         title: "皇家雙層華堡",
-        priceMeal: 204,
-        priceSingle: 259,
+        priceMeal: 259,
+        priceSingle: 204,
         image: "./images/double-royal-whopper.png"
     },
     "double-royal-whopper-spicy": {
         id: "double-royal-whopper-spicy",
         title: "辣味皇家雙層華堡",
-        priceMeal: 204,
-        priceSingle: 259,
+        priceMeal: 259,
+        priceSingle: 204,
         image: "./images/double-royal-whopper.png"
     },
     "triple-royal-whopper": {
