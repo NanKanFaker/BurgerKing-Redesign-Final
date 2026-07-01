@@ -67,6 +67,9 @@ deleteBtns.forEach((btn) => {
         cart = cartList.filter(item => item.id !== id);
         localStorage.setItem('cart', JSON.stringify(cart));
         this.closest('li').remove();
+
+        let total = totalPrice();
+        document.querySelector('.summary-card__value').textContent = '$' + total;
     })
 })
 
