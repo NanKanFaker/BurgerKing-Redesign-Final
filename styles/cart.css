@@ -32,7 +32,7 @@
 }
 
 .card {
-    width: initial;
+    width: auto;
     background-color: var(--white-color);
     border-radius: 0.75rem;
     box-shadow: 0 1px 1px var(--card-shadow-color);
