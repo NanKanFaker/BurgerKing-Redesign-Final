@@ -1,4 +1,3 @@
-//=====================RENDER PRODUCTS SECTION================//
 const productSections = [
     {
         sectionTitle: "皇家華堡系列",
@@ -72,8 +71,62 @@ const productSections = [
                 image: "./images/strong-angus-beef-burger.png"
             }
         ]
+    },
+    {
+        sectionTitle: "培根系列",
+        items: [
+            {
+                id: "heavyweight-bacon-doubleeef-Burger",
+                title: "重磅培根雙層牛肉堡",
+                priceMeal: 284,
+                priceSingle: 229,
+                image: "./images/heavyweight-bacon-doubleeef-Burger.png"
+            },
+            {
+                id: "bbq-bacon-burger",
+                title: "BBQ培根牛肉堡",
+                priceMeal: 144,
+                priceSingle: 89,
+                image: "./images/bbq-bacon-burger.png"
+            },
+            {
+                id: "double-cheese-bacon-burger",
+                title: "雙起士培根牛肉堡",
+                priceMeal: 154,
+                priceSingle: 99,
+                image: "./images/double-cheese-bacon-burger.png"
+            },
+            {
+                id: "peanut-bacon-beef-burger",
+                title: "花生培根牛肉堡",
+                priceMeal: 154,
+                priceSingle: 99,
+                image: "./images/peanut-bacon-beef-burger.png"
+            }
+        ]
+    },
+    {
+        sectionTitle: "捲捲德腸系列",
+        items: [
+            {
+                id: "rolled-sausage-burger",
+                title: "捲捲德腸堡",
+                priceMeal: 174,
+                priceSingle: 119,
+                image: "./images/rolled-sausage-burger.png"
+            },
+            {
+                id: "curly-sausage-grilled-beef-burger",
+                title: "捲捲德腸烤牛堡",
+                priceMeal: 194,
+                priceSingle: 139,
+                image: "./images/curly-sausage-grilled-beef-burger.png"
+            }
+        ]
     }
-]
+];
+
+//=====================RENDER PRODUCTS SECTION================//
 
 const productList = document.getElementById('productList');
 
@@ -84,6 +137,7 @@ function renderProductSections() {
     productSections.forEach((section) => {
         const sectionEl = document.createElement('section');
         sectionEl.className = 'product-section';
+        sectionEl.setAttribute('id', section.sectionTitle);
 
         const head = document.createElement('div');
         head.className = 'product-section__head';

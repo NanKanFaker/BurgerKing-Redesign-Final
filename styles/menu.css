@@ -112,16 +112,10 @@ a {
     cursor: pointer;
 }
 
-.category-nav__item--active {
-    border-color: rgba(214, 35, 0, 0.16);
-    background: #fff;
-    color: var(--accent);
-    font-weight: 700;
-}
-
 .product-section {
     display: grid;
     gap: 18px;
+    padding-bottom: 3.5rem
 }
 
 .product-section__head {

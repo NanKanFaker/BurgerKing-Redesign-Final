@@ -40,6 +40,69 @@ const products = {
         priceMeal: 319,
         priceSingle: 264,
         image: "./images/triple-royal-whopper.png"
+    },
+    "peanut-angus-beef-burger": {
+        id: "peanut-angus-beef-burger",
+        title: "花生安格斯牛肉堡",
+        priceMeal: 210,
+        priceSingle: 155,
+        image: "./images/peanut-angus-beef-burger.png"
+    },
+    "angus-thickcut-beef-burger": {
+        id: "angus-thickcut-beef-burger",
+        title: "安格斯厚切牛肉堡",
+        priceMeal: 210,
+        priceSingle: 155,
+        image: "./images/angus-thickcut-beef-burger.png"
+    },
+    "strong-angus-beef-burger": {
+        id: "strong-angus-beef-burger",
+        title: "勁濃安格斯牛肉堡",
+        priceMeal: 210,
+        priceSingle: 155,
+        image: "./images/strong-angus-beef-burger.png"
+    },
+    "heavyweight-bacon-doubleeef-Burger": {
+        id: "heavyweight-bacon-doubleeef-Burger",
+        title: "重磅培根雙層牛肉堡",
+        priceMeal: 284,
+        priceSingle: 229,
+        image: "./images/heavyweight-bacon-doubleeef-Burger.png"
+    },
+    "bbq-bacon-burger": {
+        id: "bbq-bacon-burger",
+        title: "BBQ培根牛肉堡",
+        priceMeal: 144,
+        priceSingle: 89,
+        image: "./images/bbq-bacon-burger.png"
+    },
+    "double-cheese-bacon-burger": {
+        id: "double-cheese-bacon-burger",
+        title: "雙起士培根牛肉堡",
+        priceMeal: 154,
+        priceSingle: 99,
+        image: "./images/double-cheese-bacon-burger.png"
+    },
+    "peanut-bacon-beef-burger": {
+        id: "peanut-bacon-beef-burger",
+        title: "花生培根牛肉堡",
+        priceMeal: 154,
+        priceSingle: 99,
+        image: "./images/peanut-bacon-beef-burger.png"
+    },
+    "rolled-sausage-burger": {
+        id: "rolled-sausage-burger",
+        title: "捲捲德腸堡",
+        priceMeal: 174,
+        priceSingle: 119,
+        image: "./images/rolled-sausage-burger.png"
+    },
+    "curly-sausage-grilled-beef-burger": {
+        id: "curly-sausage-grilled-beef-burger",
+        title: "捲捲德腸烤牛堡",
+        priceMeal: 194,
+        priceSingle: 139,
+        image: "./images/curly-sausage-grilled-beef-burger.png"
     }
 }
 
