@@ -151,3 +151,15 @@ addBtn.addEventListener('click', () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 })
 
+//show popup
+function showPopup() {
+    const btn = document.getElementById('add-cart');
+    btn.addEventListener('click', () => {
+        document.querySelector('.action__popup').classList.add('show');
+        setTimeout(() => {
+            document.querySelector('.action__popup').classList.remove('show');
+        }, 2000);
+    })
+}
+
+showPopup();

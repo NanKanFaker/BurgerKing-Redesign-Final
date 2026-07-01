@@ -318,6 +318,10 @@
     text-align: center;
 }
 
+.product__action-wrap {
+    position: relative;
+}
+
 /* Product Add Cart Button */
 .product__btn-add-cart {
     background-color: var(--third-color);
@@ -344,6 +348,28 @@
     transform: translateY(0);
 }
 
+/* Action Popup */
+.action__popup {
+    position: absolute;
+    width: max-content;
+    display: block;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    opacity: 0;
+    transition: bottom .4s, opacity .4s;
+}
+
+.action__popup.show {
+    opacity: 1;
+    bottom: 120%;
+}
 
 
 /* =============== RESPONSIVE LAYOUTS =============== */
